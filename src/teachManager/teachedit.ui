@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TeachEdit</class>
+ <widget class="QWidget" name="TeachEdit">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1500</width>
+    <height>920</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#TeachEdit{background: #FFFFFF;
+border-radius:10px;}</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>110</y>
+     <width>430</width>
+     <height>780</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#groupBox{border: 1px solid #333333;border-radius:10px}</string>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>48</y>
+      <width>140</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>黑体</family>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+border: 0px;</string>
+    </property>
+    <property name="text">
+     <string>处方名称*:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>113</y>
+      <width>140</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>黑体</family>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 0px;</string>
+    </property>
+    <property name="text">
+     <string>创 建 人*:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignJustify|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="recipeName_LineEdit">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>37</y>
+      <width>200</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>黑体</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: #EEEEEE;
+border-radius: 4px;
+border: 1px solid #999999;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="author_LineEdit">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>102</y>
+      <width>200</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>黑体</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: #EEEEEE;
+border-radius: 4px;
+border: 1px solid #999999;</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>172</y>
+      <width>390</width>
+      <height>588</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#listWidget{background: #F1F5F9;
+border-radius: 8px;
+border:none;}</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="TeachPaint" name="paint_Widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>110</y>
+     <width>860</width>
+     <height>660</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: #FFFFFF;
+border-radius: 8px;
+border: 1px solid #000000;</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>820</y>
+     <width>891</width>
+     <height>72</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QPushButton" name="add_Btn">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>黑体</family>
+        <pointsize>23</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{background: #0D9DDB;
+border-radius: 8px;
+width:140px;
+height:70px;
+color: rgb(255, 255, 255);}
+QPushButton:hover{background: #0A90D4;
+border-radius: 8px;
+color: rgb(255, 255, 255);}
+QPushButton:pressed{background: #0984CE;
+border-radius: 8px;
+color: rgb(255, 255, 255);}</string>
+      </property>
+      <property name="text">
+       <string>添加</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="edit_Btn">
+      <property name="font">
+       <font>
+        <family>黑体</family>
+        <pointsize>23</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{background: #0D9DDB;
+border-radius: 8px;
+width:140px;
+height:70px;
+color: rgb(255, 255, 255);}
+QPushButton:hover{background: #0A90D4;
+border-radius: 8px;
+color: rgb(255, 255, 255);}
+QPushButton:pressed{background: #0984CE;
+border-radius: 8px;
+color: rgb(255, 255, 255);}</string>
+      </property>
+      <property name="text">
+       <string>编辑</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QPushButton" name="clear_Btn">
+      <property name="font">
+       <font>
+        <family>黑体</family>
+        <pointsize>23</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{background: #F78759;
+border-radius: 8px;
+width:140px;
+height:70px;
+color: rgb(255, 255, 255);}
+QPushButton:hover{background: #F4673C;
+border-radius: 8px;
+color: rgb(255, 255, 255);}
+QPushButton:pressed{background: #F26036;
+border-radius: 8px;
+color: rgb(255, 255, 255);}</string>
+      </property>
+      <property name="text">
+       <string>清除</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="delete_Btn">
+      <property name="font">
+       <font>
+        <family>黑体</family>
+        <pointsize>23</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{background: #F78759;
+border-radius: 8px;
+width:140px;
+height:70px;
+color: rgb(255, 255, 255);}
+QPushButton:hover{background: #F4673C;
+border-radius: 8px;
+color: rgb(255, 255, 255);}
+QPushButton:pressed{background: #F26036;
+border-radius: 8px;
+color: rgb(255, 255, 255);}</string>
+      </property>
+      <property name="text">
+       <string>删除</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QPushButton" name="save_Btn">
+      <property name="font">
+       <font>
+        <family>黑体</family>
+        <pointsize>23</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{background: #0D9DDB;
+border-radius: 8px;
+width:140px;
+height:70px;
+color: rgb(255, 255, 255);}
+QPushButton:hover{background: #0A90D4;
+border-radius: 8px;
+color: rgb(255, 255, 255);}
+QPushButton:pressed{background: #0984CE;
+border-radius: 8px;
+color: rgb(255, 255, 255);}</string>
+      </property>
+      <property name="text">
+       <string>保存</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="confirm_Btn">
+      <property name="font">
+       <font>
+        <family>黑体</family>
+        <pointsize>23</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{background: #0D9DDB;
+border-radius: 8px;
+width:140px;
+height:70px;
+color: rgb(255, 255, 255);}
+QPushButton:hover{background: #0A90D4;
+border-radius: 8px;
+color: rgb(255, 255, 255);}
+QPushButton:pressed{background: #0984CE;
+border-radius: 8px;
+color: rgb(255, 255, 255);}</string>
+      </property>
+      <property name="text">
+       <string>确认</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>TeachPaint</class>
+   <extends>QWidget</extends>
+   <header>teachpaint.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

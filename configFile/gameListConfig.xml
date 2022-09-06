@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<gameType>
+<game ID = "1" name = "海底冒险" path = "./gameExecutable/SeaExplorer/SeaExplorer.exe" iconPath = "oceanGame.png" suitType = "0,1,2,3"></game>
+<game ID = "4" name = "贪吃怪" path = "./gameExecutable/EatFood/EatFood.exe" iconPath = "EatFood.png" suitType = "1"></game>
+<game ID = "5" name = "地下钻探" path = "./gameExecutable/SubsurfaceBoring/SubsurfaceBoring.exe" iconPath = "SubsurfaceBoring.png" suitType = "0"></game>
+<!--<game ID = "4" name = "魂斗罗" path = "" iconPath = "oceanGame.png" suitType = "0,2"></game>
+<game ID = "3" name = "偷吃奶酪" path = "./gameExecutable/StealCheese/StealCheese.exe" iconPath = "StealCheese.png" suitType = "1,2"></game>
+<game ID = "5" name = "大富翁" path = "" iconPath = "oceanGame.png" suitType = "0,1,"></game>-->
+</gameType>
+
+<!-- ID-游戏ID  name-游戏的名称  path-游戏完全路径  iconPath-图标路径  suitType-适合类型，由于一种游戏可以适应不同的训练类型，故可以写成1,2或者其它，中间用","分割
+ 0-被动 1-主动 2-助力 3-抗阻-->

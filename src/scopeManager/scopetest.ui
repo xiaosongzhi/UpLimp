@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SCopeTest</class>
+ <widget class="QWidget" name="SCopeTest">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1500</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>640</y>
+     <width>771</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>黑体</family>
+     <pointsize>22</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>握住手柄，尽可能的画出一个最大的闭合图形</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="confirm_Btn">
+   <property name="geometry">
+    <rect>
+     <x>1330</x>
+     <y>700</y>
+     <width>140</width>
+     <height>70</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>黑体</family>
+     <pointsize>28</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{background: #0D9DDB;
+border-radius: 8px;
+color: rgb(255, 255, 255);}
+QPushButton:hover{background: #0A90D4;
+border-radius: 8px;
+color: rgb(255, 255, 255);}
+QPushButton:pressed{background: #0984CE;
+border-radius: 8px;
+color: rgb(255, 255, 255);}</string>
+   </property>
+   <property name="text">
+    <string>确认</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="clear_Btn">
+   <property name="geometry">
+    <rect>
+     <x>1160</x>
+     <y>700</y>
+     <width>140</width>
+     <height>70</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>黑体</family>
+     <pointsize>28</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{background: #F78759;
+border-radius: 8px;
+color: rgb(255, 255, 255);}
+QPushButton:hover{background: #F4673C;
+border-radius: 8px;
+color: rgb(255, 255, 255);}
+QPushButton:pressed{background: #F26036;
+border-radius: 8px;
+color: rgb(255, 255, 255);}</string>
+   </property>
+   <property name="text">
+    <string>清除</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="start_Btn">
+   <property name="geometry">
+    <rect>
+     <x>990</x>
+     <y>700</y>
+     <width>140</width>
+     <height>70</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>黑体</family>
+     <pointsize>28</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{background: #0D9DDB;
+border-radius: 8px;
+color: rgb(255, 255, 255);}
+QPushButton:hover{background: #0A90D4;
+border-radius: 8px;
+color: rgb(255, 255, 255);}
+QPushButton:pressed{background: #0984CE;
+border-radius: 8px;
+color: rgb(255, 255, 255);}</string>
+   </property>
+   <property name="text">
+    <string>开始</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>130</y>
+     <width>924</width>
+     <height>484</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#groupBox{background: #FFFFFF;
+border: 2px solid #cccccc;
+border-radius:8px}</string>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="PaintDevice" name="paint_Widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>2</x>
+      <y>2</y>
+      <width>920</width>
+      <height>480</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PaintDevice</class>
+   <extends>QWidget</extends>
+   <header>paintdevice.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

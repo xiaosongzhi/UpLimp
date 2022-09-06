@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <tcpAddress IP = "192.168.1.20"  port = "8000"></tcpAddress>
+	<!--  上位机地址 -->
+	<udpServerAddress IP = "192.168.1.10"  port = "10000"></udpServerAddress>
+	<!--  下位机地址 -->
+	<udpClientAddress IP = "192.168.1.88"  port = "5000"></udpClientAddress>
+	<!--  游戏地址 -->
+	<udpGameClientAddress IP = "127.0.0.1" port = "12000"></udpGameClientAddress>
+	<!--  与游戏通信的上位机地址 -->
+	<udpGameServerAddress IP = "127.0.0.1" port = "11000"></udpGameServerAddress>
+	<serialPort portName = "com3"  baud = "115200" dataBits = "8"  parity = "0" stopBit = "0" flowControl = "0"></serialPort>
+	<dataBase IP = "192.168.1.20"  port = "9000"  userName = "root" password = "root"></dataBase>
+	<communicateType type = "0"></communicateType>
+</config>
+
+<!-- type 0-serialport 1-udp 2-tcp 3-can -->
+<!--  udpSever-上位机  udpClient-下位机 -->  
